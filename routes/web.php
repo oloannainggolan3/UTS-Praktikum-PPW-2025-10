@@ -1,13 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Auth\SocialController;
-
-Route::get('/', function () {
-    return view('welcome');
+use App\Http\Controllers\PollController;
+use App\Models\Option;
 
 
-Route::get('/auth/redirect/{provider}', [SocialController::class, 'redirect'])->name('social.redirect');
-Route::get('/auth/{provider}/callback', [SocialController::class, 'callback'])->name('social.callback');
-
-});
+Route::get('/', [PollController::class, 'index']);
+Route::post('/vote', [PollController::class, 'vote'])->name('vote');
+Route::post('/reset', [PollController::class, 'reset'])->name('reset');
