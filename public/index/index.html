@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Polling Warna Dresscode</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Polling Warna Dresscode</h1>
+
+  <div class="poll-container">
+    <p><strong>Pertanyaan:</strong> Warna dresscode apa yang paling kamu sukai untuk acara berikutnya?</p>
+
+    <form id="pollForm">
+      <div><input type="radio" name="vote" value="Putih"> Putih</div>
+      <div><input type="radio" name="vote" value="Hitam"> Hitam</div>
+      <div><input type="radio" name="vote" value="Biru Navy"> Biru Navy</div>
+      <div><input type="radio" name="vote" value="Coklat"> Coklat</div>
+      <div><input type="radio" name="vote" value="Hijau Sage"> Hijau Sage</div>
+      <div><input type="radio" name="vote" value="Dusty Pink"> Dusty Pink</div>
+      <button type="submit">Vote</button>
+    </form>
+
+    <div id="chart" class="chart"></div>
+    <button id="reset">Reset</button>
+  </div>
+
+  <script src="pollModel.js"></script>
+  <script src="pollView.js"></script>
+  <script src="pollController.js"></script>
+</body>
+</html>

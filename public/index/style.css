@@ -1,0 +1,107 @@
+/* ===== STYLE UNTUK POLLING WARNA DRESSCODE ===== */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f0f4f7, #d9e4ec);
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.poll-container {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.poll-container p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+form div {
+  margin: 8px 0;
+  text-align: left;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+#reset {
+  background: #ff4b5c;
+  margin-left: 10px;
+}
+
+#reset:hover {
+  background: #d93645;
+}
+
+/* ===== STYLE UNTUK CHART ===== */
+.chart {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.bar {
+  height: 25px;
+  border-radius: 5px;
+  margin: 8px 0;
+  color: white;
+  font-size: 14px;
+  padding-left: 10px;
+  line-height: 25px;
+  transition: width 0.5s ease;
+}
+
+/* ===== WARNA KHUSUS UNTUK SETIAP PILIHAN ===== */
+.bar[data-color="Putih"] {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.bar[data-color="Hitam"] {
+  background: #222;
+}
+
+.bar[data-color="Biru Navy"] {
+  background: #1a3d7c;
+}
+
+.bar[data-color="Coklat"] {
+  background: #8b5a2b;
+}
+
+.bar[data-color="Hijau Sage"] {
+  background: #a8bca1;
+  color: #222;
+}
+
+.bar[data-color="Dusty Pink"] {
+  background: #d8a7b1;
+  color: #222;
+}

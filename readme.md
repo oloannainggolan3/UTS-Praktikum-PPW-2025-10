@@ -62,3 +62,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 Pembagian tugas :
 Theresia : Membuat tampilan halaman polling (frontend)
+Prisca : Membuat tampilan hasil voting (barchart) dan fitur reset hasil voting
